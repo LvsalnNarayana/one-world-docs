@@ -13,6 +13,7 @@ import { LayoutContainerNode } from "./playground/nodes/LayoutContainerNode";
 import { LayoutItemNode } from "./playground/nodes/LayoutItemNode";
 import { PollNode } from "./playground/nodes/PollNode";
 import { YouTubeNode } from "./playground/nodes/YouTubeNode";
+import { PageFlowSpacerNode } from "./nodes/PageFlowSpacerNode";
 import { SimpleImageNode } from "./nodes/SimpleImageNode";
 
 export const docsEditorNodes: Array<Klass<LexicalNode>> = [
@@ -27,6 +28,7 @@ export const docsEditorNodes: Array<Klass<LexicalNode>> = [
   HashtagNode,
   HorizontalRuleNode,
   PageBreakNode,
+  PageFlowSpacerNode,
   SimpleImageNode,
   PollNode,
   LayoutContainerNode,

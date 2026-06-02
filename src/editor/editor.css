@@ -137,6 +137,36 @@
 
 .ow-docs-page-inner {
   position: relative;
+  background: transparent;
+}
+
+.ow-docs-page-stack {
+  pointer-events: none;
+}
+
+.ow-docs-page-surface {
+  pointer-events: none;
+}
+
+.ow-docs-page-editor-layer {
+  pointer-events: auto;
+}
+
+.ow-docs-page-flow-spacer {
+  display: block;
+  height: var(--ow-page-flow-spacer-h, 136px);
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  pointer-events: none;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.ow-docs-page-flow-spacer::before,
+.ow-docs-page-flow-spacer::after {
+  display: none;
 }
 
 .ow-docs-comment-anchors {
@@ -190,13 +220,27 @@
     height: auto !important;
   }
 
-  .ow-docs-page {
+  .ow-docs-page-surface {
     box-shadow: none !important;
     margin: 0 auto !important;
     width: 210mm !important;
-    min-height: 297mm !important;
+    height: 297mm !important;
     max-width: none !important;
     page-break-after: always;
+  }
+
+  .ow-docs-page-flow-spacer {
+    height: 0 !important;
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .ow-docs-page-editor-layer {
+    position: static !important;
+  }
+
+  .ow-docs-page-stack {
+    display: none !important;
   }
 
   .ow-docs-comment-anchors {

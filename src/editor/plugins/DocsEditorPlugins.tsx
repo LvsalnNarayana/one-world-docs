@@ -26,8 +26,17 @@ import OutlinePlugin from "./OutlinePlugin";
 import SimpleImagePlugin from "./SimpleImagePlugin";
 import WordCountPlugin from "./WordCountPlugin";
 import CommentMarkBridge from "./CommentMarkBridge";
+import MultiPageFlowPlugin from "./MultiPageFlowPlugin";
 
-export default function DocsEditorPlugins(): JSX.Element {
+type Props = {
+  usablePageHeightPx?: number;
+  onPageCountChange?: (count: number) => void;
+};
+
+export default function DocsEditorPlugins({
+  usablePageHeightPx,
+  onPageCountChange,
+}: Props): JSX.Element {
   return (
     <>
       <RichTextPlugin
@@ -56,6 +65,12 @@ export default function DocsEditorPlugins(): JSX.Element {
       <WordCountPlugin />
       <OutlinePlugin />
       <CommentMarkBridge />
+      {(usablePageHeightPx ?? 0) > 0 && (
+        <MultiPageFlowPlugin
+          usablePageHeightPx={usablePageHeightPx!}
+          onPageCountChange={onPageCountChange}
+        />
+      )}
     </>
   );
 }
