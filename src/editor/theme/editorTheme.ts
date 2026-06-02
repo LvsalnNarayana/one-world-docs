@@ -1,0 +1,41 @@
+import type { EditorThemeClasses } from "lexical";
+
+export const editorTheme: EditorThemeClasses = {
+  paragraph: "ow-docs-editor-paragraph",
+  quote: "ow-docs-editor-quote",
+  heading: {
+    h1: "ow-docs-editor-h1",
+    h2: "ow-docs-editor-h2",
+    h3: "ow-docs-editor-h3",
+    h4: "ow-docs-editor-h4",
+    h5: "ow-docs-editor-h5",
+    h6: "ow-docs-editor-h6",
+  },
+  list: {
+    ul: "ow-docs-editor-ul",
+    ol: "ow-docs-editor-ol",
+    listitem: "ow-docs-editor-listitem",
+    listitemChecked: "ow-docs-editor-listitem-checked",
+    listitemUnchecked: "ow-docs-editor-listitem-unchecked",
+  },
+  link: "ow-docs-editor-link",
+  text: {
+    bold: "ow-docs-editor-bold",
+    italic: "ow-docs-editor-italic",
+    underline: "ow-docs-editor-underline",
+    strikethrough: "ow-docs-editor-strikethrough",
+    code: "ow-docs-editor-code",
+    subscript: "ow-docs-editor-subscript",
+    superscript: "ow-docs-editor-superscript",
+  },
+  code: "ow-docs-editor-code-block",
+  image: "ow-docs-editor-image",
+  hr: "ow-docs-editor-hr",
+  layoutContainer: "ow-docs-layout-container",
+  layoutItem: "ow-docs-layout-item",
+  table: "ow-docs-table",
+  tableCell: "ow-docs-table-cell",
+  tableCellHeader: "ow-docs-table-cell-header",
+  tableRow: "ow-docs-table-row",
+  mark: "ow-docs-comment-highlight",
+};

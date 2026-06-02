@@ -1,0 +1,58 @@
+{
+  "name": "one-world-docs",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 4900 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host --port 4900",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/montserrat": "^5.2.5",
+    "@lexical/code": "0.31.1",
+    "@lexical/hashtag": "0.31.1",
+    "@lexical/html": "^0.31.1",
+    "@lexical/link": "0.31.1",
+    "@lexical/list": "0.31.1",
+    "@lexical/mark": "0.31.1",
+    "@lexical/markdown": "0.31.1",
+    "@lexical/react": "0.31.1",
+    "@lexical/rich-text": "0.31.1",
+    "@lexical/selection": "0.31.1",
+    "@lexical/table": "0.31.1",
+    "@lexical/utils": "0.31.1",
+    "@mui/icons-material": "^7.1.1",
+    "@mui/material": "^7.1.1",
+    "@multiavatar/multiavatar": "^1.0.7",
+    "docx": "^9.7.1",
+    "file-saver": "^2.0.5",
+    "lexical": "0.31.1",
+    "mammoth": "^1.12.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "react-router": "^7.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@faker-js/faker": "^9.8.0",
+    "@types/file-saver": "^2.0.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}
